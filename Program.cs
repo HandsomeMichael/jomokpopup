@@ -54,7 +54,7 @@ public class FullScreenImagePopUp : Form
         this.Focus();
 
         // Give users at least half a second to admire your fruit pictures before we ninja it away.
-        timer.Interval = 50; // Half a second sounds more reasonable
+        timer.Interval = 80; // Half a second sounds more reasonable
         timer.Tick += NewTick;
 
         timer.Start();
@@ -83,7 +83,7 @@ public class FullScreenImagePopUp : Form
     private void NewTick(object? sender, EventArgs e)
     {
         // Slow down cowboy, give it a fade out instead of just vanishing.
-        this.Opacity -= 0.1; 
+        this.Opacity -= 0.05;
 
         if (this.Opacity <= 0)
         {
