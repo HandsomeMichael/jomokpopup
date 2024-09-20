@@ -12,16 +12,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-	  <EmbeddedResource Include="assets/apple.png">
+  	<EmbeddedResource Include="sounds\bom.wav">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </EmbeddedResource>
-	  <EmbeddedResource Include="assets/banana.jpg">
+	  <EmbeddedResource Include="assets\apple.png">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </EmbeddedResource>
-	  <EmbeddedResource Include="assets/orange.jpeg">
+	  <EmbeddedResource Include="assets\banana.jpg">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </EmbeddedResource>
-	  <EmbeddedResource Include="assets/pineapple.jpeg">
+	  <EmbeddedResource Include="assets\orange.jpeg">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="assets\pineapple.jpeg">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </EmbeddedResource>
   </ItemGroup>
