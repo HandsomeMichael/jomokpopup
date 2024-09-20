@@ -5,7 +5,7 @@ using Timer = System.Windows.Forms.Timer;
 public class FullScreenImagePopUp : Form
 {
     private static readonly Random rand = new Random();
-    private static readonly string[] imageFiles = { "jomok1.png", "jomok2.png", "jomok3.png", "jomok4.png", "jomok5.png", "jomok6.png", "jomok7.png", "jomok8.png", "jomok9.png", "jomok10.png", "jomok11.png", "jomok12.png", "jomok13.png", "jomok14.png", "jomok15.png", "jomokjpg1.png", "jomokjpg2.png", "jomokjpg3.png", "jomokjpg4.png", "jomokjpg5.png" };
+    private static readonly string[] imageFiles = { "jomok1.png", "jomok2.png", "jomok3.png", "jomok4.png", "jomok5.png", "jomok6.png", "jomok7.png", "jomok8.png", "jomok9.png", "jomok10.png", "jomok11.png", "jomok12.png", "jomok13.png", "jomok14.png", "jomok15.png", "jomokjpg1.jpg", "jomokjpg2.jpg", "jomokjpg3.jpg", "jomokjpg4.jpg", "jomokjpg5.jpg" };
     private PictureBox pictureBox;
     public Timer timer = new();
 
