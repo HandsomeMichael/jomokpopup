@@ -25,7 +25,7 @@ public class FullScreenImagePopUp : Form
 
         // Replace 'jomokpopup' with your actual namespace
         string randomImage = imageFiles[rand.Next(imageFiles.Length)];
-        string resourceName = $"jomokpopup.assets/{randomImage}";
+        string resourceName = $"jomokpopup.assets.{randomImage}";
 
         try
         {
@@ -74,7 +74,7 @@ public class FullScreenImagePopUp : Form
             // Load the embedded WAV resource
             var assembly = Assembly.GetExecutingAssembly();
 
-            using Stream stream = GetStreamFile("jomokpopup.sounds/bom.wav");
+            using Stream stream = GetStreamFile("jomokpopup.sounds.bom.wav");
             if (stream == null) return;
 
             // Use SoundPlayer to play the embedded WAV file
