@@ -9,6 +9,9 @@ public class FullScreenImagePopUp : Form
     private PictureBox pictureBox;
     public Timer timer = new();
 
+    private string userInput = "";  // To store user input for matching
+    private const string triggerInput = "lolok";  // The specific input to close the app
+
     public FullScreenImagePopUp()
     {
         // Play sound when the popup appears
@@ -22,6 +25,8 @@ public class FullScreenImagePopUp : Form
         // Create and configure the PictureBox to display the image
         pictureBox = new PictureBox();
         pictureBox.Dock = DockStyle.Fill;
+
+        this.KeyPress += OnKeyPress;
 
         // Replace 'jomokpopup' with your actual namespace
         string randomImage = imageFiles[rand.Next(imageFiles.Length)];
@@ -49,10 +54,30 @@ public class FullScreenImagePopUp : Form
         this.Focus();
 
         // Give users at least half a second to admire your fruit pictures before we ninja it away.
-        timer.Interval = 500; // Half a second sounds more reasonable
+        timer.Interval = 50; // Half a second sounds more reasonable
         timer.Tick += NewTick;
 
         timer.Start();
+    }
+
+    // Method to handle KeyPress event
+    private void OnKeyPress(object? sender, KeyPressEventArgs e)
+    {
+        // Append the pressed key to the user input string
+        userInput += e.KeyChar.ToString().ToLower();
+
+        // Check if the input matches the trigger word
+        if (userInput.Contains(triggerInput))
+        {
+            this.Close();  // Close the form when "lolok" is typed
+            Application.Exit();  // Exit the application
+        }
+
+        // Optionally, clear the user input buffer if it gets too long
+        if (userInput.Length > triggerInput.Length)
+        {
+            userInput = userInput.Substring(userInput.Length - triggerInput.Length);
+        }
     }
 
     private void NewTick(object? sender, EventArgs e)

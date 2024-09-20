@@ -12,21 +12,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-  	<EmbeddedResource Include="sounds\bom.wav">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </EmbeddedResource>
-	  <EmbeddedResource Include="assets\apple.png">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </EmbeddedResource>
-	  <EmbeddedResource Include="assets\banana.jpg">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </EmbeddedResource>
-	  <EmbeddedResource Include="assets\orange.jpeg">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </EmbeddedResource>
-	  <EmbeddedResource Include="assets\pineapple.jpeg">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </EmbeddedResource>
+  	<EmbeddedResource Include="sounds\bom.wav"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok1.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok2.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok3.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok4.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok5.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok6.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok7.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok8.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok9.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok10.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok11.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok12.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok13.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok14.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomok15.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomokjpg1.jpg"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomokjpg2.jpg"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomokjpg3.jpg"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomokjpg4.jpg"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
+	<EmbeddedResource Include="assets\jomokjpg5.jpg"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></EmbeddedResource>
   </ItemGroup>
 
 </Project>
