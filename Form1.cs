@@ -1,4 +1,4 @@
-namespace fruitspopup;
+namespace jomokpopup;
 
 public partial class Form1 : Form
 {

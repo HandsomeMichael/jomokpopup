@@ -1,8 +1,4 @@
-using System.Drawing;
-using System.IO;
 using System.Reflection;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 public class FullScreenImagePopUp : Form
 {
@@ -21,25 +17,18 @@ public class FullScreenImagePopUp : Form
         pictureBox = new PictureBox();
         pictureBox.Dock = DockStyle.Fill;
 
+        // Replace 'jomokpopup' with your actual namespace
         string randomImage = imageFiles[rand.Next(imageFiles.Length)];
-        string resourceName = $"fruitspopup.{randomImage}"; // Replace 'YourNamespace' with your actual namespace
+        string resourceName = $"jomokpopup.{randomImage}";
 
         try
         {
             // Print all resource names for debugging
             ListResourceNames();
 
-            using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName))
-            {
-                if (stream == null)
-                {
-                    throw new FileNotFoundException("Resource not found", randomImage);
-                }
-                using (Image image = Image.FromStream(stream))
-                {
-                    pictureBox.Image = new Bitmap(image);
-                }
-            }
+            using Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName) ?? throw new FileNotFoundException("Resource not found", randomImage);
+            using Image image = Image.FromStream(stream);
+            pictureBox.Image = new Bitmap(image);
         }
         catch (FileNotFoundException ex)
         {
@@ -54,8 +43,11 @@ public class FullScreenImagePopUp : Form
         this.Focus();
 
         // Timer to close the form after .5 seconds
-        System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-        timer.Interval = 500; // .5 seconds
+        System.Windows.Forms.Timer timer = new()
+
+        {
+            Interval = 500 // .5 seconds
+        };
         timer.Tick += (sender, e) => this.Close();
         timer.Start();
     }

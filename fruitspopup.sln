@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fruitspopup", "fruitspopup.csproj", "{515A1BD3-923E-4ACE-B35E-CED5D873A51D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jomokpopup", "jomokpopup.csproj", "{515A1BD3-923E-4ACE-B35E-CED5D873A51D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

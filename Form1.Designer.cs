@@ -1,4 +1,4 @@
-﻿namespace fruitspopup;
+﻿namespace jomokpopup;
 
 partial class Form1
 {
