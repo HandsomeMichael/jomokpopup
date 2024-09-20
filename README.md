@@ -1,6 +1,6 @@
-# FruitsPopup - Harmless Virus Prank App
+# Jomok Popup - Harmfull gay ass virus
 
-**FruitsPopup** is a fun and harmless prank app that randomly flashes fullscreen images of fruits (apple, banana, orange, pineapple) at unexpected intervals, mimicking a "virus-like" pop-up behavior. This C# Windows Forms application uses random timers and embedded resources to create an unpredictable visual experience.
+**Jomok Popup** is a fun and harmless prank app that randomly flashes fullscreen images of fruits (apple, banana, orange, pineapple) at unexpected intervals, mimicking a "virus-like" pop-up behavior. This C# Windows Forms application uses random timers and embedded resources to create an unpredictable visual experience.
 
 ## Key Features
 - Fullscreen fruit images displayed for 0.5 seconds.
